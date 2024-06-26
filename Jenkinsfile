@@ -1,10 +1,10 @@
-pipeline{
-    agent{any}
-    stages{
-        stage("NPM Install"){
-            steps{
-                bat "npm install"
+pipeline {
+    agent any
+    stages {
+        stage('NMP Install') {
+            steps {
+                sh 'npm install'
             }
         }
-    }
+}   
 }
